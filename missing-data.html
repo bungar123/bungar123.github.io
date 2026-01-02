@@ -2,58 +2,167 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Missing Data & Imputation | Bennett Ungar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Graduate Course Development – Missing Data & Imputation | Bennett Ungar</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 48px 20px;
-      line-height: 1.6;
-    }
-    a { color: #1a73e8; }
-    ul { margin-left: 20px; }
+    body { font-family: Arial, sans-serif; max-width: 900px; margin: 0 auto; padding: 48px 20px; line-height: 1.6; }
+    a { color: #1a73e8; text-decoration: none; }
+    .meta { color: #555; margin-top: 0; }
+    .tag { display: inline-block; border: 1px solid #e5e5e5; border-radius: 999px; padding: 4px 10px; margin: 6px 8px 0 0; font-size: 0.9em; }
+    .section { margin-top: 32px; }
+    ul { margin-left: 18px; }
+    .callout { border: 1px solid #e5e5e5; border-radius: 12px; padding: 14px 16px; background: #fafafa; }
+    .note { border-left: 4px solid #e5e5e5; padding: 10px 14px; background: #fcfcfc; border-radius: 8px; }
+    code { background: #f3f3f3; padding: 2px 6px; border-radius: 6px; }
   </style>
 </head>
 <body>
 
 <p><a href="projects.html">← Back to Projects</a></p>
 
-<h1>Graduate Course Development: Missing Data & Imputation</h1>
-<p><strong>University of Tennessee, Knoxville</strong> · Aug 2024 – Present</p>
-
-<h2>Problem</h2>
-<p>
-Graduate analytics students often struggle to appropriately diagnose and handle missing data,
-leading to biased estimates and unreliable models.
+<h1>Graduate Course Development – Missing Data & Imputation Techniques</h1>
+<p class="meta">
+  <strong>Haslam College of Business, Business Analytics & Statistics</strong> · University of Tennessee, Knoxville
+  <br/>
+  <strong>Role:</strong> Course Development / Analytics Contributor (worked directly with faculty)
 </p>
 
-<h2>My Role</h2>
-<ul>
-  <li>Collaborated with BAS faculty to design a graduate-level course module on missing data</li>
-  <li>Developed R functions for missingness diagnostics and multiple imputation (MICE)</li>
-  <li>Researched and integrated alternative imputation techniques and best practices</li>
-</ul>
+<div>
+  <span class="tag">R</span>
+  <span class="tag">mice (Multiple Imputation)</span>
+  <span class="tag">Data Cleaning</span>
+  <span class="tag">Synthetic Data Generation</span>
+  <span class="tag">Model Evaluation (RMSE)</span>
+  <span class="tag">Curriculum Development</span>
+</div>
 
-<h2>Tools & Methods</h2>
-<ul>
-  <li>R, tidyverse, mice</li>
-  <li>Missing data diagnostics and visualization</li>
-  <li>Multiple imputation validation and data integrity checks</li>
-</ul>
+<div class="section">
+  <h2>Summary</h2>
+  <p>
+    Collaborated with faculty to develop a graduate-level course focused on diagnosing and handling missing data in
+    applied business analytics. I contributed to course design, built a realistic synthetic dataset with thousands of
+    records and inter-variable dependencies, supported missingness simulation and imputation workflows (including MICE),
+    and helped establish a model-based evaluation framework so students could compare approaches using objective metrics.
+  </p>
+  <div class="note">
+    <p style="margin-top:0;">
+      <strong>Highlight:</strong> I contributed to building and piloting this graduate course while I was a full-time
+      undergraduate student at the University of Tennessee, Knoxville.
+    </p>
+  </div>
+</div>
 
-<h2>Deliverables</h2>
-<ul>
-  <li>Structured course outline and learning objectives</li>
-  <li>Hands-on exercises and example datasets</li>
-  <li>Reusable R functions for instructional use</li>
-</ul>
+<div class="section">
+  <h2>The Problem</h2>
+  <p>
+    In real analytics work, missing data is unavoidable. If missingness is not diagnosed and handled correctly, it can
+    introduce bias, reduce model performance, and lead to incorrect business decisions. The goal of the course was to
+    teach students a practical workflow: diagnose missingness, clean data, apply appropriate imputation methods, and
+    evaluate downstream model performance.
+  </p>
+</div>
 
-<h2>Impact</h2>
-<p>
-Created high-quality instructional material enabling students to correctly diagnose missingness,
-apply single/multiple imputation, and validate results in applied analytics settings.
-</p>
+<div class="section">
+  <h2>What I Did</h2>
+  <ul>
+    <li>
+      Reviewed and refined a course data dictionary by identifying variables, data types, and logical dependencies
+      between features (how A affects B, B affects C, etc.), helping inform the course’s structure and learning flow.
+    </li>
+    <li>
+      Built a synthetic dataset (10–15k records) representing season ticket holder behavior, including realistic
+      dependencies across variables (e.g., ticket type linked to income, household structure, tenure, and account type).
+    </li>
+    <li>
+      Supported course design in R by developing and refining a structured course outline and instructional materials
+      (e.g., an RMarkdown “master” file with lessons, code examples, and exercises).
+    </li>
+    <li>
+      Helped implement missingness experiments (simulating missing data) and guided students through imputation methods
+      ranging from simple single imputation (mean/mode) to multiple imputation using <code>mice</code>.
+    </li>
+    <li>
+      Integrated a model-based evaluation approach where students compared imputation strategies by training predictive
+      models and measuring accuracy against known ground-truth values (e.g., using RMSE).
+    </li>
+    <li>
+      Helped define a consistent scoring framework to compare student solutions and identify best-performing approaches
+      relative to a reference (“parent”) benchmark.
+    </li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>Course Workflow (What Students Practiced)</h2>
+  <div class="callout">
+    <ol style="margin-left:18px;">
+      <li><strong>Understand the data</strong> → data dictionary, variable types, dependencies</li>
+      <li><strong>Clean the data</strong> → fix typos, inconsistent categories, and data quality issues</li>
+      <li><strong>Diagnose missingness</strong> → patterns, mechanisms, and practical implications</li>
+      <li><strong>Impute</strong> → single imputation (mean/mode) and multiple imputation (MICE)</li>
+      <li><strong>Model & evaluate</strong> → train models and compare results with objective metrics (e.g., RMSE)</li>
+      <li><strong>Select a final approach</strong> → choose the best-performing workflow and justify it clearly</li>
+    </ol>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Example Modeling Context</h2>
+  <p>
+    A core course use case was predicting whether a season ticket holder would renew (churn vs. retain) using the
+    available features. Students learned how imputation choices affected model performance and how to defend their
+    chosen approach with evidence.
+  </p>
+</div>
+
+<div class="section">
+  <h2>Impact</h2>
+  <ul>
+    <li>Helped launch and refine a graduate-level course that students responded to positively during an initial pilot.</li>
+    <li>Created realistic instructional data and workflows that mirrored real-world missing data challenges.</li>
+    <li>Established a repeatable framework for evaluating imputation methods through downstream predictive performance.</li>
+    <li>Contributed to ongoing improvements through iterative refinement across semesters.</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>Skills Demonstrated</h2>
+  <ul>
+    <li>Curriculum development and instructional design for graduate analytics topics</li>
+    <li>Data dictionary refinement and feature dependency thinking</li>
+    <li>Synthetic data generation with realistic business logic and dependencies</li>
+    <li>Missing data diagnostics and multiple imputation (MICE) in R</li>
+    <li>Data cleaning and quality assurance for modeling readiness</li>
+    <li>Model evaluation and benchmarking (e.g., RMSE) to compare approaches objectively</li>
+    <li>Communicating technical concepts in a student-friendly, applied format</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>Code Availability Note</h2>
+  <div class="note">
+    <p style="margin-top:0;">
+      The instructional code developed for this course is currently in a probationary and
+      evolving state as the curriculum continues to be refined. Because the material is part
+      of University of Tennessee coursework and has not yet reached a finalized release,
+      code snippets and full examples cannot be publicly shared at this time.
+    </p>
+    <p>
+      As the course continues to mature and permissions are granted, representative code
+      examples and instructional artifacts may be published in the future.
+    </p>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Data Note</h2>
+  <div class="note">
+    <p style="margin-top:0;">
+      The dataset used for instruction was <strong>synthetic (fully simulated)</strong> for educational purposes and does not contain
+      real customer or team data.
+    </p>
+  </div>
+</div>
 
 </body>
 </html>
