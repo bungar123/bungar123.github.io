@@ -14,18 +14,46 @@
     .callout { border: 1px solid #e5e5e5; border-radius: 12px; padding: 14px 16px; background: #fafafa; }
     .note { border-left: 4px solid #e5e5e5; padding: 10px 14px; background: #fcfcfc; border-radius: 8px; }
     code { background: #f3f3f3; padding: 2px 6px; border-radius: 6px; }
+    .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.header-text {
+  flex: 1;
+}
+
+.header-logo {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  background: #fff;
+}
+
   </style>
 </head>
 <body>
 
 <p><a href="projects.html">← Back to Projects</a></p>
 
-<h1>Graduate Course Development – Missing Data & Imputation Techniques</h1>
-<p class="meta">
-  <strong>Haslam College of Business, Business Analytics & Statistics</strong> · University of Tennessee, Knoxville
-  <br/>
-  <strong>Role:</strong> Course Development / Analytics Contributor (worked directly with faculty)
-</p>
+<div class="header">
+  <div class="header-text">
+    <h1>UTK Haslam College of Business – Graduate Course Development: Missing Data & Imputation</h1>
+    <p class="meta">
+      Graduate Course Development · Business Analytics & Statistics · University of Tennessee
+    </p>
+  </div>
+  <img
+    src="assets/img/logos/utk-haslam.jpg"
+    alt="UTK Haslam College of Business logo"
+    class="header-logo"
+  />
+</div>
+
 
 <div>
   <span class="tag">R</span>
