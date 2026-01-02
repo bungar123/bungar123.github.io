@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DockHounds – Pitcher Scouting Reports | Bennett Ungar</title>
+  <title>DockHounds – Daily Pitcher Scouting Reports | Bennett Ungar</title>
   <style>
     body { font-family: Arial, sans-serif; max-width: 900px; margin: 0 auto; padding: 48px 20px; line-height: 1.6; }
     a { color: #1a73e8; text-decoration: none; }
@@ -12,17 +12,17 @@
     .section { margin-top: 28px; }
     ul { margin-left: 18px; }
     .callout { border: 1px solid #e5e5e5; border-radius: 12px; padding: 14px 16px; background: #fafafa; }
-    .grid { display: grid; grid-template-columns: 1fr; gap: 12px; }
-    @media (min-width: 800px) {
-      .grid { grid-template-columns: 1fr 1fr; }
-    }
+    .grid { display: grid; grid-template-columns: 1fr; gap: 14px; }
+    @media (min-width: 800px) { .grid { grid-template-columns: 1fr 1fr; } }
+    .card { border: 1px solid #e5e5e5; border-radius: 12px; padding: 14px 16px; }
+    h3 { margin-bottom: 8px; }
   </style>
 </head>
 <body>
 
 <p><a href="projects.html">← Back to Projects</a></p>
 
-<h1>Lake Country DockHounds – Hitter/Position Player Scouting Reports</h1>
+<h1>Lake Country DockHounds – Daily Pitcher Scouting Reports for Hitters</h1>
 <p class="meta"><strong>Baseball Analytics / Scouting Support</strong> · May 2023 – Sep 2023</p>
 
 <div>
@@ -32,56 +32,94 @@
   <span class="tag">Data Cleaning</span>
   <span class="tag">Reporting</span>
   <span class="tag">Player/Coach Communication</span>
+  <span class="tag">Training & Leadership</span>
 </div>
 
 <div class="section">
   <h2>Problem</h2>
   <p>
-    Hitters and coaches needed clear, actionable information on opposing starting pitchers—delivered quickly and
-    consistently—so they could plan approaches by count and batter handedness.
+    The DockHounds needed a repeatable, game-day scouting process to help hitters prepare for opposing starting pitchers.
+    The league had limited data infrastructure (no centralized database or repository), so preparation required building
+    pitch-level insights from scratch using recent appearances and game film—then delivering those insights in a format
+    hitters and coaches could actually use.
   </p>
 </div>
 
 <div class="section">
-  <h2>What I Did</h2>
+  <h2>My Role</h2>
   <ul>
-    <li>Mined pitch-level data from game film using a dual-monitor workflow (video + structured logging sheet).</li>
-    <li>Captured details including pitch type, velocity, location, count, pitch outcome, and in-play results.</li>
-    <li>Cleaned and summarized the data into tendencies and percent breakdowns (RHB, LHB, and overall).</li>
-    <li>Produced concise daily scouting reports and presented findings in pre-game meetings with players/staff.</li>
+    <li>Owned the end-to-end game-day scouting workflow for opposing starting pitchers.</li>
+    <li>Created and maintained the structured Excel logging and reporting template.</li>
+    <li>Delivered daily printed reports and communicated key takeaways directly to players/coaches.</li>
+    <li>Trained two interns on pitch identification, data logging, analysis, and presentation for away games.</li>
+    <li>Transitioned the process to an intern lead after leaving for graduate school, ensuring continuity.</li>
   </ul>
 </div>
 
 <div class="section">
-  <h2>Workflow</h2>
+  <h2>Game-Day Workflow (End-to-End)</h2>
   <div class="callout">
     <div class="grid">
-      <div>
-        <strong>1) Video → Data Capture</strong>
+      <div class="card">
+        <h3>1) Identify the Starter</h3>
         <ul>
-          <li>Log each pitch event into a structured sheet</li>
-          <li>Standardize categories (pitch types, outcomes)</li>
+          <li>Each game day began with confirmation from the head coach on the opposing starting pitcher.</li>
+          <li>Located the pitcher’s player profile and last three recorded outings to use as the analysis sample.</li>
         </ul>
       </div>
-      <div>
-        <strong>2) Cleaning → Analysis</strong>
+
+      <div class="card">
+        <h3>2) Baseline Performance Context</h3>
         <ul>
-          <li>Validate entries and resolve inconsistencies</li>
-          <li>Compute usage + outcome rates by count & handedness</li>
+          <li>Used box scores to capture recent performance indicators for hitter context.</li>
+          <li>Logged metrics such as innings pitched, batters faced, strikeouts, walks, pitches thrown, strikes vs balls, runs, earned runs, etc.</li>
         </ul>
       </div>
-      <div>
-        <strong>3) Reporting</strong>
+
+      <div class="card">
+        <h3>3) Video → Structured Pitch Logging</h3>
         <ul>
-          <li>Generate quick hitter-facing takeaways</li>
-          <li>Include percentage tendencies & simple visuals</li>
+          <li>Dual-monitor setup: game film on one screen, Excel logging sheet on the other.</li>
+          <li>Captured pitch-level details including:
+            <ul>
+              <li>Pitch number (early/late in outing), count (0–0, 3–2, etc.)</li>
+              <li>Pitch type (FB/SL/CB/etc.), velocity (when available), location (outside corner, middle-middle, etc.)</li>
+              <li>Batter handedness (LHB/RHB)</li>
+              <li>Outcome (ball/looking strike/foul/in play + batted-ball result)</li>
+            </ul>
+          </li>
         </ul>
       </div>
-      <div>
-        <strong>4) Communication</strong>
+
+      <div class="card">
+        <h3>4) Clean → Compute → Summarize</h3>
         <ul>
-          <li>Deliver report + talk through key points pre-game</li>
-          <li>Answer hitter questions and clarify approach notes</li>
+          <li>Cleaned the manually collected data for consistency and accuracy.</li>
+          <li>Computed:
+            <ul>
+              <li>Ball-to-strike ratios</li>
+              <li>Pitch mix percentages by batter handedness (LHB vs RHB)</li>
+              <li>Count-based tendencies and location tendencies</li>
+            </ul>
+          </li>
+          <li>Translated findings into hitter-ready takeaways and simple visualizations.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>5) Deliver & Communicate</h3>
+        <ul>
+          <li>Printed multiple copies for hitters, coaches, and in-dugout reference.</li>
+          <li>Provided a copy to the color commentator to support in-game storytelling and analysis.</li>
+          <li>For away games, shared the report digitally (e.g., screenshots) via the players’ group chat.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>6) Scale the Process (Away Games + Continuity)</h3>
+        <ul>
+          <li>Worked with two interns during away games—trained them on pitch identification and the full workflow.</li>
+          <li>After returning to school, placed an intern in charge to keep the project running daily.</li>
         </ul>
       </div>
     </div>
@@ -89,33 +127,42 @@
 </div>
 
 <div class="section">
-  <h2>Key Outputs</h2>
+  <h2>What Made This Valuable for Hitters</h2>
   <ul>
-    <li><strong>RHB vs LHB tendencies:</strong> pitch mix, location patterns, and go-to pitches in leverage counts</li>
-    <li><strong>Count-based strategy:</strong> what shows up in 0–0, 1–0, 0–2, 3–2, etc.</li>
-    <li><strong>Efficiency flags:</strong> time-to-pick-up cues (pace, patterns) and pitch sequencing notes</li>
-    <li><strong>One-page summary:</strong> designed for fast digestion in a pre-game setting</li>
+    <li><strong>Handedness splits:</strong> how pitch mix and location changed vs LHB and RHB.</li>
+    <li><strong>Count tendencies:</strong> go-to pitches in leverage counts and early-count patterns.</li>
+    <li><strong>Attack plan:</strong> concise “what to expect” notes that supported pre-game preparation and in-game adjustments.</li>
+    <li><strong>Simple visuals:</strong> designed for fast digestion and dugout usability.</li>
+  </ul>
+</div>
+
+<div class="section">
+  <h2>Leadership & Team Enablement</h2>
+  <ul>
+    <li>Introduced the project under a new coaching staff and scaled it from home games to full-season coverage (home + away).</li>
+    <li>Mentored interns on both the technical work (classification/logging/analysis) and communication (how to present to coaches/players).</li>
+    <li>Created a repeatable process that continued after my departure and remains in use.</li>
   </ul>
 </div>
 
 <div class="section">
   <h2>Impact</h2>
   <ul>
-    <li>Enabled hitters to enter games with a structured plan based on the opponent’s tendencies.</li>
-    <li>Improved day-to-day preparation through consistent reporting and direct communication.</li>
-    <li>Built a repeatable process for turning raw video into actionable insights under time constraints.</li>
+    <li>Helped establish a consistent hitter-preparation process during a season of organizational transition (new coaching staff).</li>
+    <li>After implementing the daily scouting workflow, the team’s offensive preparation improved and the club narrowly missed the playoffs that year (compared to missing by double digits the year prior).</li>
+    <li>The scouting process continues to be used daily, and the team has made the playoffs in subsequent seasons (2024 and 2025).</li>
   </ul>
   <p class="meta">
-    <em>Note:</em> Add a redacted sample scouting report PDF and a screenshot of the logging template to strengthen this page.
+    <em>Note:</em> Add a redacted sample scouting report PDF and a screenshot of your logging template to strengthen this page even more.
   </p>
 </div>
 
 <div class="section">
   <h2>Tools</h2>
   <ul>
-    <li>Excel (structured logging, cleaning, summaries)</li>
-    <li>Video analysis workflow (manual tagging + consistency checks)</li>
-    <li>Communication (daily pre-game meetings, concise takeaways)</li>
+    <li>Excel (structured pitch logging, cleaning, summary tables, and visuals)</li>
+    <li>Video analysis (manual charting from game film)</li>
+    <li>Communication & presentation (pre-game meetings, hitter-friendly takeaways)</li>
   </ul>
 </div>
 
