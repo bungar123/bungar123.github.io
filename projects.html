@@ -12,19 +12,46 @@
       line-height: 1.6;
     }
     a { color: #1a73e8; text-decoration: none; }
+
     .project {
       border: 1px solid #e5e5e5;
       border-radius: 12px;
       padding: 18px;
       margin: 18px 0;
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
     }
+
     .project h3 {
       margin-top: 0;
       margin-bottom: 6px;
     }
+
     .project p {
       margin: 0;
       color: #444;
+    }
+
+    .logo {
+      width: 46px;
+      height: 46px;
+      border-radius: 10px;
+      object-fit: contain;
+      border: 1px solid #e5e5e5;
+      background: #fff;
+      flex-shrink: 0;
+    }
+
+    .project-content {
+      flex: 1;
+    }
+
+    @media (max-width: 600px) {
+      .logo {
+        width: 38px;
+        height: 38px;
+      }
     }
   </style>
 </head>
@@ -34,56 +61,68 @@
 <p><a href="index.html">← Back to Home</a></p>
 
 <div class="project">
-  <h3>
-    <a href="missing-data.html">
-      UTK Haslam College of Business – Graduate Course Development: Missing Data & Imputation
-    </a>
-  </h3>
-  <p>
-    Co-developed a graduate-level course for the MS in Business Analytics & Statistics program at the
-    University of Tennessee, focused on missing data diagnostics, imputation strategies, and model
-    evaluation in R. Led data generation, dependency design, and course material refinement while
-    serving as a research and instructional support role.
-  </p>
+  <img class="logo" src="assets/img/logos/utk-haslam.jpg" alt="UTK Haslam College of Business logo" />
+  <div class="project-content">
+    <h3>
+      <a href="missing-data.html">
+        UTK Haslam College of Business – Graduate Course Development: Missing Data & Imputation
+      </a>
+    </h3>
+    <p>
+      Co-developed a graduate-level course for the MS in Business Analytics & Statistics program at the
+      University of Tennessee, focused on missing data diagnostics, imputation strategies, and model
+      evaluation in R. Led data generation, dependency design, and course material refinement while
+      serving as a research and instructional support role.
+    </p>
+  </div>
 </div>
 
 <div class="project">
-  <h3>
-    <a href="thermo.html">
-      Thermo Fisher Scientific – LPG Data Governance & Alation Catalog
-    </a>
-  </h3>
-  <p>
-    Led the restructuring and modernization of an early-stage data dictionary for the Laboratory
-    Product Group, progressing from Excel-based staging to a stakeholder-facing data catalog published
-    in Alation to improve metadata clarity, accessibility, and data discovery.
-  </p>
+  <img class="logo" src="assets/img/logos/thermo-fisher.png" alt="Thermo Fisher Scientific logo" />
+  <div class="project-content">
+    <h3>
+      <a href="thermo.html">
+        Thermo Fisher Scientific – LPG Data Governance & Alation Catalog
+      </a>
+    </h3>
+    <p>
+      Led the restructuring and modernization of an early-stage data dictionary for the Laboratory
+      Product Group, progressing from Excel-based staging to a stakeholder-facing data catalog published
+      in Alation to improve metadata clarity, accessibility, and data discovery.
+    </p>
+  </div>
 </div>
 
 <div class="project">
-  <h3>
-    <a href="dockhounds.html">
-      Lake Country DockHounds – Player Scouting & Game-Day Analytics
-    </a>
-  </h3>
-  <p>
-    Designed and executed a daily pitcher scouting workflow using manual video review and pitch-level
-    data capture to generate actionable reports for players, coaches, and broadcasters. Established
-    a repeatable analytics process that became a permanent part of the team’s preparation strategy.
-  </p>
+  <img class="logo" src="assets/img/logos/dockhounds.jpg" alt="Lake Country DockHounds logo" />
+  <div class="project-content">
+    <h3>
+      <a href="dockhounds.html">
+        Lake Country DockHounds – Player Scouting & Game-Day Analytics
+      </a>
+    </h3>
+    <p>
+      Designed and executed a daily pitcher scouting workflow using manual video review and pitch-level
+      data capture to generate actionable reports for players, coaches, and broadcasters. Established
+      a repeatable analytics process that became a permanent part of the team’s preparation strategy.
+    </p>
+  </div>
 </div>
 
 <div class="project">
-  <h3>
-    <a href="pitt-case.html">
-      Pitt Business / DICK’S Sporting Goods Strategy Case Competition
-    </a>
-  </h3>
-  <p>
-    Top 8 National Finalist in a multi-round, data-driven strategy competition focused on retail
-    experiences, loyalty, personalization, and executive communication. Played a central role in team
-    coordination, strategic analysis, feasibility justification, and presentation development.
-  </p>
+  <img class="logo" src="assets/img/logos/dicks.png" alt="DICK’S Sporting Goods logo" />
+  <div class="project-content">
+    <h3>
+      <a href="pitt-case.html">
+        Pitt Business / DICK’S Sporting Goods Strategy Case Competition
+      </a>
+    </h3>
+    <p>
+      Top 8 National Finalist in a multi-round, data-driven strategy competition focused on retail
+      experiences, loyalty, personalization, and executive communication. Played a central role in team
+      coordination, strategic analysis, feasibility justification, and presentation development.
+    </p>
+  </div>
 </div>
 
 </body>
