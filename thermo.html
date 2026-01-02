@@ -13,14 +13,46 @@
     ul { margin-left: 18px; }
     .callout { border: 1px solid #e5e5e5; border-radius: 12px; padding: 14px 16px; background: #fafafa; }
     .note { border-left: 4px solid #e5e5e5; padding: 10px 14px; background: #fcfcfc; border-radius: 8px; }
+    .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.header-text {
+  flex: 1;
+}
+
+.header-logo {
+  width: 96px;
+  height: 96px;
+  object-fit: contain;
+  border: 1px solid #e5e5e5;
+  border-radius: 16px;
+  background: #fff;
+}
+
   </style>
 </head>
 <body>
 
 <p><a href="projects.html">← Back to Projects</a></p>
 
-<h1>Thermo Fisher Scientific – LPG Data Governance: Data Dictionary → Alation Catalog</h1>
-<p class="meta"><strong>LP Data Governance Analyst Intern II</strong> · May 2024 – Aug 2024 · Carlsbad, CA (On-site)</p>
+<div class="header">
+  <div class="header-text">
+    <h1>Thermo Fisher Scientific – Data Governance & Alation Catalog</h1>
+    <p class="meta">
+      LP Data Governance Analyst Intern II (Onsite) · May 2024 – Aug 2024
+    </p>
+  </div>
+  <img
+    src="assets/img/logos/thermo-fisher.png"
+    alt="Thermo Fisher Scientific logo"
+    class="header-logo"
+  />
+</div>
+
 
 <div>
   <span class="tag">Data Governance</span>
