@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Graduate Course Development – Missing Data & Imputation | Bennett Ungar</title>
   <style>
-    body { font-family: Arial, sans-serif; max-width: 900px; margin: 0 auto; padding: 48px 20px; line-height: 1.6; }
+    body { font-family: Arial, sans-serif; max-width: 980px; margin: 0 auto; padding: 48px 20px; line-height: 1.6; }
     a { color: #1a73e8; text-decoration: none; }
+    a:hover { text-decoration: underline; }
     .meta { color: #555; margin-top: 0; }
     .tag { display: inline-block; border: 1px solid #e5e5e5; border-radius: 999px; padding: 4px 10px; margin: 6px 8px 0 0; font-size: 0.9em; }
     .section { margin-top: 32px; }
@@ -14,27 +15,54 @@
     .callout { border: 1px solid #e5e5e5; border-radius: 12px; padding: 14px 16px; background: #fafafa; }
     .note { border-left: 4px solid #e5e5e5; padding: 10px 14px; background: #fcfcfc; border-radius: 8px; }
     code { background: #f3f3f3; padding: 2px 6px; border-radius: 6px; }
+
     .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 20px;
-}
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 20px;
+    }
+    .header-text { flex: 1; }
+    .header-logo {
+      width: 140px;
+      height: 140px;
+      object-fit: contain;
+      border: 1px solid #e5e7eb;
+      border-radius: 20px;
+      background: #ffffff;
+      padding: 12px;
+    }
 
-.header-text {
-  flex: 1;
-}
+    /* ===== Big “photo” graphic card ===== */
+    figure.media-card {
+      margin: 18px 0 0 0;
+      border: 1px solid #e5e7eb;
+      border-radius: 14px;
+      background: #fff;
+      overflow: hidden;
+    }
+    .media-head {
+      padding: 14px 16px 10px 16px;
+      border-bottom: 1px solid #e5e7eb;
+      background: #fafafa;
+    }
+    .media-title { margin: 0; font-size: 1.05em; }
+    .media-sub { margin: 6px 0 0 0; color: #555; font-size: 0.95em; }
+    .media-img {
+      display: block;
+      width: 100%;
+      height: auto;
+      background: #fff;
+    }
+    .media-footer {
+      padding: 12px 16px 14px 16px;
+      border-top: 1px solid #e5e7eb;
+      background: #fafafa;
+    }
+    .media-note { margin: 0; color: #555; font-size: 0.92em; }
 
-.header-logo {
-  width: 140px;
-  height: 140px;
-  object-fit: contain;
-  border: 1px solid #e5e7eb;
-  border-radius: 20px;
-  background: #ffffff;
-  padding: 12px;
-}
-
+    /* Small helper: keeps long pages readable */
+    .tight { margin-top: 18px; }
   </style>
 </head>
 <body>
@@ -43,9 +71,9 @@
 
 <div class="header">
   <div class="header-text">
-    <h1>UTK Haslam College of Business – Graduate Course Development: Missing Data & Imputation</h1>
+    <h1>UTK Haslam College of Business – Graduate Course Development: Missing Data &amp; Imputation</h1>
     <p class="meta">
-      Graduate Course Development · Business Analytics & Statistics · University of Tennessee
+      Graduate Course Development · Business Analytics &amp; Statistics · University of Tennessee
     </p>
   </div>
   <img
@@ -55,7 +83,6 @@
   />
 </div>
 
-
 <div>
   <span class="tag">R</span>
   <span class="tag">mice (Multiple Imputation)</span>
@@ -63,6 +90,30 @@
   <span class="tag">Synthetic Data Generation</span>
   <span class="tag">Model Evaluation (RMSE)</span>
   <span class="tag">Curriculum Development</span>
+</div>
+
+<!-- ===== Big graphic goes early to reduce text density ===== -->
+<div class="section tight">
+  <figure class="media-card">
+    <div class="media-head">
+      <p class="media-title"><strong>Graduate Analytics Workflow: Missing Data to Model Evaluation</strong></p>
+      <p class="media-sub">Representative instructional workflow used in the course (high-level).</p>
+    </div>
+
+    <!-- Put the PNG here:
+         assets/img/projects/missing_data_workflow.png -->
+    <img
+      class="media-img"
+      src="assets/img/projects/missing_data_workflow.png"
+      alt="Workflow diagram: missing data diagnosis, imputation strategies (MICE), and model evaluation"
+    />
+
+    <div class="media-footer">
+      <p class="media-note">
+        Visual summary of the end-to-end workflow students practiced: data understanding → missingness diagnosis → imputation (single vs MICE) → evaluation.
+      </p>
+    </div>
+  </figure>
 </div>
 
 <div class="section">
@@ -129,7 +180,7 @@
       <li><strong>Clean the data</strong> → fix typos, inconsistent categories, and data quality issues</li>
       <li><strong>Diagnose missingness</strong> → patterns, mechanisms, and practical implications</li>
       <li><strong>Impute</strong> → single imputation (mean/mode) and multiple imputation (MICE)</li>
-      <li><strong>Model & evaluate</strong> → train models and compare results with objective metrics (e.g., RMSE)</li>
+      <li><strong>Model &amp; evaluate</strong> → train models and compare results with objective metrics (e.g., RMSE)</li>
       <li><strong>Select a final approach</strong> → choose the best-performing workflow and justify it clearly</li>
     </ol>
   </div>
